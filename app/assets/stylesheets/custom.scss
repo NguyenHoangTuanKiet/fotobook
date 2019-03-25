@@ -1,0 +1,46 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-default {
+  background-color: #3c5999;
+  border-radius: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+nav.navbar.navbar-default a:hover {
+  color: white;
+}
+
+nav.navbar.navbar-default a {
+  color: white;
+  font-weight: bolder;
+}
+
+input.form-control {
+  width: 500px !important;
+}
+
+nav.navbar.navbar-default .container-fluid {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.col-md-2.vertical-nav ul {
+    list-style: none;
+}
+
+.col-md-2.vertical-nav ul li {
+    padding: 7px;
+}
+
+.col-md-2.vertical-nav ul li a {
+    font-size: medium;
+    color: #838383;
+    font-weight: bolder;
+}
+
+.col-md-2.vertical-nav {
+    padding-top: 40px;
+    padding-left: 2%;
+}
