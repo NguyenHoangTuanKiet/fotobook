@@ -13,4 +13,13 @@
 //= require rails-ujs
 //= require activestorage
 //= require jquery3
+//= require i18n
+//= require i18n.js
+//= require i18n/translations
 //= require_tree .
+
+$(document).ready(function(){
+  $('a.navbar-link').on('click', function(){
+    alert(I18n.t('fotobook'))
+  })
+})
