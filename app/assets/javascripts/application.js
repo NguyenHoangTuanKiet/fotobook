@@ -18,8 +18,3 @@
 //= require i18n/translations
 //= require_tree .
 
-$(document).ready(function(){
-  $('a.navbar-link').on('click', function(){
-    alert(I18n.t('fotobook'))
-  })
-})
