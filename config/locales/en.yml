@@ -30,4 +30,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  fotobook: Fotobook
+  search_photo_album: Search Photo/Album
+  log_in: Login
+
+  feeds: Feeds
+  my_photos: My Photos
+  my_albums: My Albums
+
+
+
+
