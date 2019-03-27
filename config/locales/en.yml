@@ -38,6 +38,9 @@ en:
   my_photos: My Photos
   my_albums: My Albums
 
+  posts:
+    subtitle: "%{name} is published at %{time}"
+
 
 
 

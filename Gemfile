@@ -20,6 +20,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 gem 'slim'
 gem 'i18n-js'
+gem 'rspec-rails', '~> 3.8'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
