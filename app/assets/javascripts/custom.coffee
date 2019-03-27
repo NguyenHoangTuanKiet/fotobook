@@ -3,3 +3,4 @@ $(document).ready ->
     alert I18n.t('fotobook')
     return
   return
+return
