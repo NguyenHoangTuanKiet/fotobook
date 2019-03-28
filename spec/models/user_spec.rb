@@ -8,3 +8,5 @@ RSpec.describe User, type: :model do
     expect("GMNXVK").to start_with("K").or start_with("G")
   end
 end
+
+

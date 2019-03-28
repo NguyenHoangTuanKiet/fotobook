@@ -21,6 +21,8 @@ gem 'jquery-rails'
 gem 'slim'
 gem 'i18n-js'
 gem 'rspec-rails', '~> 3.8'
+gem 'sidekiq'
+gem 'devise'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
