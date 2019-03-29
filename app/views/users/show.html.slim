@@ -11,5 +11,7 @@ div class="container-fluid"
           a href="#" == t('my_albums')
 
     div class="col-md-8"
-
+      - if @user.avatar?
+        = image_tag @user.avatar.thumb.url
+        = link_to "Remove Avatar", destroy_avatar_user_path(id: current_user.id), method: :delete
     div class="col-md-2"

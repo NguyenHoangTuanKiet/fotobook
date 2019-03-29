@@ -23,6 +23,10 @@ gem 'i18n-js'
 gem 'rspec-rails', '~> 3.8'
 gem 'sidekiq'
 gem 'devise'
+gem 'carrierwave', '~> 1.0'
+gem 'rmagick', '~> 3.0'
+gem 'kaminari'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

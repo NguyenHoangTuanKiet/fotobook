@@ -1,0 +1,21 @@
+= form_with model: @user do |f|
+  div class = "form-group"
+    = f.label :firstname
+    = f.text_field :first_name, class: "form-control"
+
+  div class = "form-group"
+    = f.label :lastname
+    = f.text_field :last_name, class: "form-control"
+
+  div class = "form-group"
+    = f.label :email
+    = f.email_field :email, class: "form-control"
+
+  - if @user.avatar?
+      = image_tag @user.avatar.thumb.url
+      = link_to "Remove Avatar", destroy_avatar_user_path(id: current_user.id), method: :delete
+  - else
+      div class="field"
+        = f.file_field :avatar
+
+  = f.submit
