@@ -6,9 +6,10 @@ div class="container-fluid"
         li
           a href="#" == t('feeds')
         li
-          a href="#" == t('my_photos')
+          a href=(user_photos_path(current_user)) == t('my_photos')
         li
           a href="#" == t('my_albums')
+
 
     div class="col-md-8"
 
