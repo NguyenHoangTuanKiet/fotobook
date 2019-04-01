@@ -6,7 +6,7 @@ div class="container-fluid"
         li
           a href="#" == t('feeds')
         li
-          == link_to t('my_photos'), user_photos_path(current_user)
+          == link_to t('my_photos'), photos_path
         li
           a href="#" == t('my_albums')
 
@@ -14,5 +14,5 @@ div class="container-fluid"
     div class="col-md-8"
       div class="row"
         div class="col-md-2 col-md-offset-10"
-          == link_to "New Photo", new_user_photo_path(current_user), class: "btn btn-success"
+          == link_to "New Photo", new_photo_path, class: "btn btn-success"
       hr

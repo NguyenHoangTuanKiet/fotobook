@@ -23,11 +23,13 @@ gem 'i18n-js'
 gem 'rspec-rails', '~> 3.8'
 gem 'sidekiq'
 gem 'devise'
+gem 'carrierwave', '~> 1.0'
+gem 'rmagick', '~> 3.0'
+gem 'kaminari'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

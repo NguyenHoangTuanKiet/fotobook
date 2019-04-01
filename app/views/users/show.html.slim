@@ -6,7 +6,7 @@ div class="container-fluid"
         li
           a href="#" == t('feeds')
         li
-          a href=(user_photos_path(current_user)) == t('my_photos')
+          == link_to t('my_photos'), photos_path
         li
           a href="#" == t('my_albums')
 

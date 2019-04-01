@@ -6,7 +6,7 @@ div class="container-fluid"
         li
           a href="#" == t('feeds')
         li
-          == link_to t('my_photos'), user_photos_path(current_user)
+          == link_to t('my_photos'), photos_path
         li
           a href="#" == t('my_albums')
 
@@ -18,7 +18,7 @@ div class="container-fluid"
       hr
 
       div class="row"
-        = form_with model: @photo do |f|
+        = form_with model: @photo, local: true do |f|
           div class="col-md-6"
             div class="form-group"
               = f.label :title
