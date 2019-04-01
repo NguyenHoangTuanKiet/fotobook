@@ -12,27 +12,39 @@ div class="container-fluid"
 
 
     div class="col-md-8"
-      div class="row"
-        div class="col-md-2"
-          h5 New Photo
-      hr
+        div class="row"
+          div class="col-md-2"
+            h4
+              b New Photo
+        hr
 
-      div class="row"
         = form_with model: @photo, local: true do |f|
-          div class="col-md-6"
-            div class="form-group"
-              = f.label :title
-              = f.text_field :title, class: "form-control"
+          div class="row"
+              div class="col-md-6"
+                div class="form-group"
+                  = f.label :title
+                  = f.text_field :title, class: "form-control"
 
-            div class="form-group"
-              = f.file_field :attachment
+                div class="row"
+                  div class="col-md-6"
+                    div class="form-group"
+                      = f.label :sharing_mode
+                      = f.select :private, options_for_select([["Private", 1], ["Public", 0]]), {}, class: "form-control"
 
-            = f.submit
+                div class="form-group"
+                  = f.file_field :attachment
 
-          div class="col-md-6"
-            div class="form-group"
-              = f.label :description
-              = f.text_area :description, class: "form-control"
+
+              div class="col-md-6"
+                div class="form-group"
+                  = f.label :description
+                  = f.text_area :description, class: "form-control"
+
+          div class="row"
+            div class="col-md-6"
+              = f.submit "Save", class: "btn btn-success"
+
+
 
 
 
