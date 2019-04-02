@@ -13,8 +13,11 @@
 //= require rails-ujs
 //= require activestorage
 //= require jquery3
+//= require jquery.validate
+//= require jquery.validate.additional-methods
 //= require i18n
 //= require i18n.js
 //= require i18n/translations
 //= require_tree .
+
 

@@ -10,9 +10,13 @@ class PhotosController < ApplicationController
 
   def create
     user = current_user
-    photo = user.photos.create(photo_params)
-    byebug
-    redirect_to user_photos_path(user.id)
+    @photo = user.photos.new(photo_params)
+    if @photo.save
+      redirect_to photos_path
+    else
+          render 'new'
+    end
+
   end
 
   private

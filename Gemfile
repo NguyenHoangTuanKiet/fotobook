@@ -26,6 +26,8 @@ gem 'devise'
 gem 'carrierwave', '~> 1.0'
 gem 'rmagick', '~> 3.0'
 gem 'kaminari'
+gem "jquery-validation-rails"
+
 
 
 # Use CoffeeScript for .coffee assets and views
