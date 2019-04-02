@@ -12,19 +12,7 @@ $(document).ready ( function() {
         "photo[attachment]": {
           required: true
         }
-      },
-      messages: {
-        "photo[title]": {
-          required: "Enter your photo title"
-        },
-        "photo[description]": {
-          required: "Enter your description"
-        },
-        "photo[attachment]": {
-          required: "Attach your photo file"
-        }
       }
-
     }
 
   );
