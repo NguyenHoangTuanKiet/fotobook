@@ -77,3 +77,35 @@ body {
     padding-bottom: 20px;
 }
 
+#square {
+  margin-right: 0px;
+  height: 200px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-style: dashed;
+  border-color: #bfbfbf;
+  border-radius: 10px;
+}
+
+.fas.fa-plus {
+  font-size: 70px;
+  padding-top: 25%;
+  padding-left: 37%;
+}
+
+#square:hover {
+  cursor: pointer;
+}
+
+.col-md-3.upload-button {
+    padding-bottom: 20px;
+}
+
+textarea#photo_description {
+    height: 140px;
+}
+
+input#photo_attachment {
+  display: none;
+}
+

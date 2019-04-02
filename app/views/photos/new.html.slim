@@ -43,14 +43,22 @@ div class="container-fluid"
                       = f.label :sharing_mode
                       = f.select :private, options_for_select([["Private", 1], ["Public", 0]]), {}, class: "form-control"
 
-                div class="form-group"
-                  = f.file_field :attachment
-
 
               div class="col-md-6"
                 div class="form-group"
                   = f.label :description
                   = f.text_area :description, class: "form-control", placeholder: "Photo Description"
+
+          div class="row"
+            div class="col-md-3 upload-button"
+              div id="square"
+                i class="fas fa-plus"
+              img id="photo-preview"
+
+            div class="col-md-3 upload-field"
+              div class="form-group"
+              = f.file_field :attachment
+
 
           div class="row"
             div class="col-md-6"
