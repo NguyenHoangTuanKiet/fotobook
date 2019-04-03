@@ -1,0 +1,32 @@
+#index-photo {
+  .col-md-3.photo-col {
+    height: 130px;
+    padding-top: 10px
+  }
+
+  .col-md-3.photo-col > .img-thumbnail {
+    height: 100%;
+    width: 100%;
+  }
+
+  .pagination {
+    padding-left: 39%;
+    padding-right: 39%;
+  }
+
+  .rouded-lock {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 70%;
+  }
+
+  .fas.fa-lock {
+    padding-top: 17px;
+    padding-left: 18px;
+  }
+
+}

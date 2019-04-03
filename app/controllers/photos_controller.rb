@@ -1,7 +1,9 @@
 class PhotosController < ApplicationController
 
-  def index
+  before_action :authenticate_user!
 
+  def index
+    @photos = current_user.photos.page(params[:page]).per(4)
   end
 
   def new
