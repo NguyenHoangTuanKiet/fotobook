@@ -19,8 +19,19 @@ div.container-fluid.main-container-body#index-photo
 
       div.row
         - @photos.each do |photo|
-          div [class="col-md-3 photo-col" data-toggle="modal" data-target="#photoModal"]
+          div [class="col-md-3 photo-col" data-toggle="modal" data-target="#photoModal-#{photo.id}"]
             == image_tag photo.attachment_url, class: "img-thumbnail"
+
+            / .modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="photoModal-#{photo.id}"
+            /   .modal-dialog role="document"
+            /     .modal-content
+            /       .modal-header
+            /         button class="close" aria-label="Close" data-dismiss="modal" type="button"
+            /             span aria-hidden="true" &times;
+            /         h4 id="myModalLabel" class="modal-title" Modal title
+            /       .modal-body
+            /         == photo.description
+            /       .modal-footer
 
               / div.photo-title
               /   == photo.title
@@ -29,16 +40,20 @@ div.container-fluid.main-container-body#index-photo
                 div.rouded-lock
                   i.fas.fa-lock.bottom-left
 
-
       = paginate @photos
 
-            .modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="photoModal"
-              .modal-dialog role="document"
-                .modal-content
-                  .modal-header
-                    button.close aria-label="Close" data-dismiss="modal" type="button"
-                        span aria-hidden="true"  ×
-                    h4#myModalLabel.modal-title Modal title
-                  .modal-body
+      / button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#photoModal-bef" Launch demo modal
 
-                  .modal-footer
+
+      - @photos.each do |photo|
+        .modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="photoModal-#{photo.id}"
+            .modal-dialog role="document"
+              .modal-content
+                .modal-header
+                  button class="close" aria-label="Close" data-dismiss="modal" type="button"
+                      span aria-hidden="true" &times;
+                  h4 id="myModalLabel" class="modal-title"
+                    == photo.title
+                .modal-body
+                  == image_tag photo.attachment_url, class: "img-thumbnail"
+

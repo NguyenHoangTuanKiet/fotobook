@@ -19,4 +19,5 @@
 //= require i18n.js
 //= require i18n/translations
 //= require bootstrap
+//= require popper
 //= require_tree .
