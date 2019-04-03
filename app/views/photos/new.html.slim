@@ -41,7 +41,7 @@ div.container-fluid.main-container-body#new-photo
                   div.col-md-6
                     div.form-group
                       = f.label :sharing_mode
-                      = f.select :private, options_for_select([["Private", 1], ["Public", 0]]), {}, class: "form-control"
+                      = f.select :private, options_for_select(sharing_mode_options), {}, class: "form-control"
 
 
               div.col-md-6
