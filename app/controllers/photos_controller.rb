@@ -13,9 +13,8 @@ class PhotosController < ApplicationController
     if @photo.save
       redirect_to photos_path
     else
-          render 'new'
+      render 'new'
     end
-
   end
 
   private

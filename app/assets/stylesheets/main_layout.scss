@@ -46,7 +46,6 @@ nav.navbar.navbar-default .container-fluid {
 }
 
 
-
 html {
   height: 100%
 }
@@ -55,7 +54,7 @@ body {
   height: 100%
 }
 
-.container-fluid {
+.container-fluid.main-container-body {
   height:100%
 }
 
@@ -66,7 +65,7 @@ body {
 }
 
 
-.col-md-8 {
+.col-md-8.core-content {
     background-color: white;
     height: 95%;
     padding-top: 30px;

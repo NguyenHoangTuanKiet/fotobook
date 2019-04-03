@@ -1,7 +1,7 @@
-div class="container-fluid" id="new-photo"
-  div class="row main-body"
+div.container-fluid.main-container-body#new-photo
+  div.row.main-body
 
-    div class="col-md-2 vertical-nav"
+    div.col-md-2.vertical-nav
       ul
         li
           a href="#" == t('feeds')
@@ -11,15 +11,15 @@ div class="container-fluid" id="new-photo"
           a href="#" == t('my_albums')
 
 
-    div class="col-md-8"
-        div class="row"
-          div class="col-md-2"
+    div.col-md-8.core-content
+        div.row
+          div.col-md-12
             h4
               b New Photo
         hr
 
-        div class="row"
-          div class="col-md-12"
+        div.row
+          div.col-md-12
             - if @photo.errors.any?
               h3
                 == "#{pluralize(@photo.errors.count, "error")} "
@@ -31,37 +31,37 @@ div class="container-fluid" id="new-photo"
 
 
         = form_with model: @photo, local: true, id: "new-photo-form" do |f|
-          div class="row"
-              div class="col-md-6"
-                div class="form-group"
+          div.row
+              div.col-md-6
+                div.form-group
                   = f.label :title
                   = f.text_field :title, class: "form-control", placeholder: "Photo title", autofocus: true
 
-                div class="row"
-                  div class="col-md-6"
-                    div class="form-group"
+                div.row
+                  div.col-md-6
+                    div.form-group
                       = f.label :sharing_mode
                       = f.select :private, options_for_select([["Private", 1], ["Public", 0]]), {}, class: "form-control"
 
 
-              div class="col-md-6"
-                div class="form-group"
+              div.col-md-6
+                div.form-group
                   = f.label :description
                   = f.text_area :description, class: "form-control", placeholder: "Photo Description"
 
-          div class="row"
-            div class="col-md-3 upload-button"
-              div id="square"
-                i class="fas fa-plus"
+          div.row
+            div.col-md-3.upload-button
+              div#square
+                i.fas.fa-plus
               img id="photo-preview"
 
-            div class="col-md-3 upload-field"
-              div class="form-group"
+            div.col-md-3.upload-field
+              div.form-group
               = f.file_field :attachment
 
 
-          div class="row"
-            div class="col-md-6"
+          div.row
+            div.col-md-6
               = f.submit "Save", class: "btn btn-success"
 
 
