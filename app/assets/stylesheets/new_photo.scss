@@ -1,31 +1,22 @@
 #new-photo {
-    .container-fluid {
-      height:100%
-    }
 
     #new-photo-form label.error {
       color: red;
     }
 
-    .main-body {
-      padding-top: 20px;
-      height: 100%;
-      background-color: #f8f8f8;
-    }
-
-    .col-md-8 {
-        background-color: white;
-        height: 95%;
-        padding-top: 30px;
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-bottom: 20px;
-    }
+    // .col-md-8 {
+    //     background-color: white;
+    //     height: 95%;
+    //     padding-top: 30px;
+    //     padding-left: 100px;
+    //     padding-right: 100px;
+    //     padding-bottom: 20px;
+    // }
 
     #square {
       margin-right: 0px;
-      height: 200px;
-      width: 100%;
+      height: 150px;
+      width: 150px;
       background-color: #f1f1f1;
       border-style: dashed;
       border-color: #bfbfbf;
@@ -33,9 +24,9 @@
     }
 
     .fas.fa-plus {
-      font-size: 70px;
-      // padding-top: 25%;
-      // padding-left: 37%;
+      font-size: 50px;
+      padding-top: 33%;
+      padding-left: 35%;
     }
 
     #square:hover {
