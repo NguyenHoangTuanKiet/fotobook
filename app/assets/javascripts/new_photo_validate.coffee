@@ -1,6 +1,4 @@
-$('document').ready ->
-
-
+validate = ->
   $('#new-photo-form').validate
     rules:
       "photo[title]":
@@ -10,9 +8,9 @@ $('document').ready ->
       "photo[attachment]":
           required: true
 
-
-  readURL = (input) ->
-
+previewPhoto = ->
+  $('input[type=file]').change ->
+    input = this
     if input.files and input.files[0]
       reader = new FileReader
 
@@ -23,11 +21,15 @@ $('document').ready ->
 
       reader.readAsDataURL input.files[0]
 
-
+maskUploadClicking = ->
   $('#square').on 'click', (e) ->
     e.preventDefault();
     $('input[type=file]').click();
 
-  $('input[type=file]').change ->
-    readURL this
+@NewPhoto =
+  run: ->
+    $ ->
+      validate()
+      previewPhoto()
+      maskUploadClicking()
 
